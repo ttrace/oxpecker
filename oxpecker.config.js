@@ -1,4 +1,4 @@
 module.exports = {
-     api_key: "AIzaSyB9YozYluU9AALKOuhUwklTThT8vh8P7Z0",
+     api_key: "your_key",
      ox_target_language: "ja"
 }
