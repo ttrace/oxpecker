@@ -1,10 +1,15 @@
-var api_key = "YOUR_API_KEY";
-var endpoint_url = "https://translation.googleapis.com/language/translate/v2?key=" + api_key;
-var ox_target_language = (window.navigator.languages && window.navigator.languages[0]).split("-")[0];
+var ox_config = require('./oxpecker.config.js');
+
+var endpoint_url = "https://translation.googleapis.com/language/translate/v2?key=" + ox_config.api_key;
+var ox_target_language = ox_config.ox_target_language;
+console.log(ox_config, ox_target_language);
+
+var browser_language = (window.navigator.languages && window.navigator.languages[0]).split("-")[0];
+
 var ox_target_contents_list = $(".status__content").not( $(".ox-flagged"));
 
 var ox_translation_button_template = document.createElement("A");
-     ox_translation_button_template.innerHTML = "文A";
+     ox_translation_button_template.innerHTML = "文/A";
      ox_translation_button_template.style.cssText = "background-color:#707b97;line-height:1.25em;padding:0.3em;border-radius:0.5em;margin-left: 18px; float: right; position: relative; top: -24px;font-size:0.75em";
 
 ox_target_contents_list.each(function(i){
