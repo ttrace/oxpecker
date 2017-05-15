@@ -3,8 +3,11 @@ oxpecker adds translation button on Mastodon with bookmarklet.
 
 ## Build
 Duplicate `oxpecker.config.sample.js` as `oxpecker.config.js` and write Google Translation Key.
-```$ webpack && bookmarkletter bookmark.js
+
 ```
+$ webpack && bookmarkletter bookmark.js
+```
+
  and copy output on your browser.
 
 ## Requirement
