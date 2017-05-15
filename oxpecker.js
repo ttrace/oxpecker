@@ -7,9 +7,8 @@ var browser_language = (window.navigator.languages && window.navigator.languages
 
 var ox_target_contents_list = $(".status__content").not($(".ox-flagged")).not($(".status.muted .status__content"));
 
-var ox_translation_button_template = document.createElement("A");
-     ox_translation_button_template.innerHTML = "文/A";
-     ox_translation_button_template.style.cssText = "background-color:#606984;color:#393f4f;font-weight:bold;cursor:pointer;line-height:1.25em;padding:0.3em;border-radius:0.5em;margin-left: 18px; float: right; position: relative; top: -24px;font-size:0.75em";
+var create_button = require('./translation-button.js');
+var ox_translation_button_template = create_button();
 
 ox_target_contents_list.each(function(i){
      var ox_target_content = ox_target_contents_list[i]
