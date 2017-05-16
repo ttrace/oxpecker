@@ -1,0 +1,14 @@
+.ox-translate-button {
+     position: relative;
+     top: -24px;
+     cursor:pointer;
+     background-color:#606984;
+     color:#393f4f;
+     padding:0.3em;
+     font-weight:bold;
+     line-height:1.25em;
+     border-radius:0.5em;
+     margin-left: 18px;
+     float: right;
+     font-size:0.75em;
+}

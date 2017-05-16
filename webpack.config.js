@@ -5,5 +5,13 @@ module.exports = {
      output: {
          path: __dirname,
          filename: 'bookmarklet.js'
+     },
+     module: {
+       loaders: [
+         {
+           test: /\.css$/,
+           loader: "style-loader!css-loader"
+         }
+       ]
      }
  };
