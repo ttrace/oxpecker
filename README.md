@@ -20,10 +20,11 @@ $ webpack && bookmarkletter bookmark.js
  and copy output on your browser.
 
 ## Requirement
-- Webpack https://www.npmjs.com/package/webpack
 - Google Translation API Key
-to run this bookmarklet, you need Google Translation API key.
-https://cloud.google.com/translate/
+  to run this bookmarklet, you need Google Translation API key.
+  https://cloud.google.com/translate/
+- Webpack https://www.npmjs.com/package/webpack
+  - sytle-loader and css-loader are necessary to build.`npm --save-dev css-loader style-loader`
 - bookmarkletter https://www.npmjs.com/package/bookmarkletter
 
 ## known issues
