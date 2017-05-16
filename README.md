@@ -33,3 +33,6 @@ Developer is going to implement following features.
 - auto adding translation button
 - supporting another translation API (Bing and Yandex)
 - develop easy implemantation on Mastodon instance without bookmarklet.
+
+## License
+oxpecker are made available under the terms of the GNU Affero General Public License (GNU AGPLv3) with respecting Mastodon , since 17:00 JST 16th,May 2017.
