@@ -1,3 +1,5 @@
+require("./oxpecker.css");
+
 var ox_config = require('./oxpecker.config.js');
 
 var endpoint_url = "https://translation.googleapis.com/language/translate/v2?key=" + ox_config.api_key;
