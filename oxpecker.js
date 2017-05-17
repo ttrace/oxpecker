@@ -23,8 +23,9 @@ var append_translator = function append_event( target ){
      target.parentNode.appendChild( translation_button );
      target.classList.add( "ox-flagged" );
 
-     translation_button.addEventListener('click', function(){
+     translation_button.addEventListener('click', function call_api(){
           console.log('started');
+          var working_button = this;
           $.ajax({
                          type:     "GET",
                     dataType:      "jsonp",
@@ -36,7 +37,10 @@ var append_translator = function append_event( target ){
                }).then(
                     function(json){
 //                         console.log( json.data.translations[0].translatedText );
-                         $("#"+target_id).after( json.data.translations[0].translatedText );
+                         $("#"+target_id)[0].innerText = json.data.translations[0].translatedText;
+                         $("#"+target_id)[0].classList.add( "completed" );
+                         working_button.classList.add( "completed" );
+                         working_button.removeEventListener( 'click', call_api, false);
                     },
                     function(){
                          console.log('error');

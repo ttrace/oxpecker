@@ -17,6 +17,22 @@
      background-color: #707b97;
 }
 
-.ox-translate-button.muted {
+.ox-translate-button.completed {
      cursor: auto;
+     color: #606984;
+     background-color: transparent;
+     border: solid 1px #606984;
+}
+
+
+.ox-translation-anhor {
+
+}
+
+.ox-translation-anhor.processing {
+
+}
+
+.ox-translation-anhor.completed {
+
 }
