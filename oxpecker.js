@@ -37,7 +37,8 @@ ox_target_contents_list.each(function(i){
                     }
                }).then(
                     function(json){
-                         console.log( json.data.translations[0].translatedText );
+                         console.log( json );
+//                         console.log( json.data.translations[0].translatedText );
                          $("#"+target_id).after( json.data.translations[0].translatedText );
                     },
                     function(){

@@ -12,3 +12,11 @@
      float: right;
      font-size:0.75em;
 }
+
+.ox-translate-button:hover {
+     background-color: #707b97;
+}
+
+.ox-translate-button.muted {
+     cursor: auto;
+}
