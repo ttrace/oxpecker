@@ -17,6 +17,31 @@
      background-color: #707b97;
 }
 
-.ox-translate-button.muted {
+.ox-translate-button.completed {
      cursor: auto;
+     color: #606984;
+     background-color: transparent;
+     border: solid 1px #606984;
+     opacity: 0.5;
+}
+
+
+.status__content p + .ox-translation-anchor {
+    margin-top: -20px;
+}
+
+.ox-translation-anchor {
+     height:0px;
+     transition: height 0.2s ease-in, margin-top 0.2s ease-in;
+     font-size: 0.5em;
+}
+
+.ox-translation-anchor.processing {
+     margin-top:0;
+     height:1rem;
+}
+
+.ox-translation-anchor.completed {
+     height: auto;
+     font-size: 0.8em;
 }
