@@ -25,6 +25,8 @@ var append_translator = function append_event( target ){
 
      translation_button.addEventListener('click', function call_api(){
           console.log('started');
+          $("#"+target_id)[0].classList.add( "processing" );
+          $("#"+target_id)[0].innerText = "translating...";
           var working_button = this;
           $.ajax({
                          type:     "GET",
