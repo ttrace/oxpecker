@@ -1,3 +1,4 @@
+var $ = require("jquery");
 require("./oxpecker.css");
 
 var ox_config = require('./oxpecker.config.js');
@@ -60,12 +61,12 @@ var ox_target_contents_list = $(".status__content").not($(".ox-flagged")).not($(
 
 
 // select the target node
-var target = $(".columns-area")[0];
+var target = document.querySelector(".columns-area");
  
 // observer instance
 var observer = new MutationObserver(function(mutations) {
   mutations.forEach(function( mutation ) {
-     if( mutation.addedNodes[0] instanceof HTMLElement && mutation.addedNodes[0].className =="status" ){
+     if( mutation.addedNodes[0] instanceof HTMLElement && mutation.addedNodes[0].querySelector(".status__content") ){
           append_translator( mutation.addedNodes[0].querySelector(".status__content") );
      }
   });    
