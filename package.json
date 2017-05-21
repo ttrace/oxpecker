@@ -1,0 +1,27 @@
+{
+  "name": "oxpecker",
+  "version": "1.0.0",
+  "description": "oxpecker adds translation button on Mastodon with bookmarklet.",
+  "main": "oxpecker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttrace/oxpecker.git"
+  },
+  "keywords": [
+    "bookmarklet",
+    "for",
+    "Mastodon"
+  ],
+  "author": "Taiyo Fujii",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ttrace/oxpecker/issues"
+  },
+  "homepage": "https://github.com/ttrace/oxpecker#readme",
+  "devDependencies": {
+    "jquery": "^3.2.1"
+  }
+}
