@@ -14,7 +14,7 @@ javascript:(function()%7B(function(c)%7Bvar%20b=%7B%7D;function%20a(e)%7Bif(b%5B
 Duplicate `oxpecker.config.sample.js` as `oxpecker.config.js` and write Google Translation Key.
 
 ```
-$ webpack && bookmarkletter bookmark.js
+$ webpack && bookmarkletter bookmarklet.js
 ```
 
  and copy output on your browser.
